@@ -1,0 +1,80 @@
+/* GENERAL TAG SELECTORS */
+
+h1 {
+    text-align: center;
+}
+
+/* TEAM SECTION STYLES */
+
+.team-section {
+    position: relative;
+    padding: 50px 0 100px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10vh 150px;
+    column-gap: 5vw;
+    row-gap: 8vw;
+}
+
+.team-member {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.member-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.member-title {
+    transform: translateZ(40px);
+    text-align: center;
+}
+
+.member-title h1 {
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+}
+
+.member-title h2 {
+    font-size: 1rem;    
+    margin: 5px;
+}
+
+.patrons-committee {
+    display: flex;
+    padding: 0 100px;
+    flex-wrap: wrap;
+    text-align: center;
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
+.patrons-section {
+    flex-grow: 1;
+}
+
+.patrons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.patron {
+    margin: 5vh 0;
+}
+
+.committee-section {
+    flex-grow: 1;
+}
