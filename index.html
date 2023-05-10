@@ -9,15 +9,19 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- CSS Stylsesheet -->
+  <!-- CSS Stylsesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">VLSI</a>
+      <a class="navbar-brand" href="index.html">VLSI</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,16 +29,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Our Vision</a>
+            <a class="nav-link" href="index.html#activities">Activities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Activities</a>
+            <a class="nav-link" href="index.html#mission">Mission & Values</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mission & Values</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Objectives</a>
+            <a class="nav-link" href="index.html#objectives">Objectives</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,7 +47,14 @@
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="#">Faculty Incharge</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Committee</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#objectives">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -56,36 +64,59 @@
   <!-- Headers - vision -->
 
   <header class="vision-section">
-    <h1>VISION</h1>
-    <p>To become a center of excellence in VLSI domain that can cater to the needs 
-      of semiconductor industry by bridging the gap between industry & academics</p>
+    <img src="./assets/images/placerholder.png" alt="" class="vision-bg">
+    <div class="vision-text">
+      <h1 class="vision-title">Our Vision</h1>
+      <p class="vision">Is to become a center of excellence in VLSI domain that can cater to the needs
+        of semiconductor industry by bridging the gap between industry & academics.</p>
+    </div>
   </header>
 
   <!-- Headers - activities -->
 
-  <div class="activities-section">
-    <h1>UPCOMING ACTIVITIES</h1>
+  <div class="activity-section" id="activities">
+    <h1 class="primary-title">UPCOMING ACTIVITIES</h1>
+    <hr class="line-hr">
     <div class="activity-list">
-      <div class="activity-card">
-        <!-- WE'LL SEE WHAT TO DO HERE ONCE INFO COMES, BUT MOST PROBABLY A CARD THAT HAS THE ACTIVITY POSTER, TITLE AND DESCRIPTION  -->
-      </div>
+      <a class="activity-card" href="#">
+        <img src="./assets/images/placerholder.png" alt="" class="activity-poster">
+        <h2 class="activity-title">Intel Processors</h2>
+        <span class="activity-subtitle">Come here to check out how intel makes it's processors</span>
+      </a>
+      <a class="activity-card" href="#">
+        <img src="./assets/images/placerholder.png" alt="" class="activity-poster">
+        <h2 class="activity-title">Intel Processors</h2>
+        <span class="activity-subtitle">Come here to check out how intel makes it's processors</span>
+      </a>
+      <a class="activity-card" href="#">
+        <img src="./assets/images/placerholder.png" alt="" class="activity-poster">
+        <h2 class="activity-title">Intel Processors</h2>
+        <span class="activity-subtitle">Come here to check out how intel makes it's processors</span>
+      </a>
+      <a class="activity-card" href="#">
+        <img src="./assets/images/placerholder.png" alt="" class="activity-poster">
+        <h2 class="activity-title">Intel Processors</h2>
+        <span class="activity-subtitle">Come here to check out how intel makes it's processors</span>
+      </a>
     </div>
   </div>
 
   <!-- Headers - mission -->
 
-  <div class="mission-section">
-    <h1>MISSION</h1>
-    <p>The mission of the Club is to create a learning platform where every member 
+  <div class="mission-section" id="mission">
+    <h1 class="primary-title">MISSION</h1>
+    <hr class="line-hr">
+    <p>-Our mission is to create a learning platform where every member 
       gets an opportunity to aquire & develop the skills in semiconductor domain for
       pursuing a career in this field as well as for life-long learning.</p>
   </div>
 
   <!-- Headers - values -->
 
-  <div class="values-section">
+  <div class="values-section" id="values">
     <!-- MAYBE MAKE CAROUSEL WITH SMALL DESCRIPTION OF THE VALUE IN ONE SENTENCE -->
-    <h1>VALUES</h1>
+    <h1 class="primary-title">VALUES</h1>
+    <hr class="line-hr">
     <ul>
       <li>Integrity</li>
       <li>Discipline</li>
@@ -97,8 +128,9 @@
 
   <!-- Headers - objectives -->
 
-  <div class="objectives-section">
-    <h1>OBJECTIVES</h1>
+  <div class="objectives-section" id="objectives">
+    <h1 class="primary-title">OBJECTIVES</h1>
+    <hr class="line-hr">
     <ul>
       <li>
         To conduct activities to create awareness about career opportunities in
@@ -124,97 +156,113 @@
     </ul>
   </div>
 
-  <!-- Headers - team -->
-
   <div class="team-section">
     <!-- CORE TEAM  -->
-    <h1 id="team-title">CORE TEAM</h1>
+    <h1 class="primary-title">CORE TEAM</h1>
+    <hr class="line-hr">
     <div class="team">
-      <div class="team-member">
+      <a class="team-member" href="#">
         <div class="member-image" style="background-image: url(./assets/images/placerholder.png)"></div>
         <div class="member-title">
+          <h2>PRESIDENT</h2>
           <h1>Gurusatwik Bhatta N</h1>
-          <h2>President</h2>
         </div>
-      </div>
-      <div class="team-member">
+      </a>
+      <a class="team-member" href="#">
         <div class="member-image" style="background-image: url(./assets/images/placerholder.png)"></div>
         <div class="member-title">
+          <h2>SECRETARY</h2>
           <h1>Meghana S</h1>
-          <h2>Secretary</h2>
         </div>
-      </div>
-      <div class="team-member">
+      </a>
+      <a class="team-member" href="#">
         <div class="member-image" style="background-image: url(./assets/images/placerholder.png)"></div>
         <div class="member-title">
+          <h2>TREASURER</h2>
           <h1>Gouthami V</h1>
-          <h2>Treasurer</h2>
         </div>
-      </div>
-      <div class="team-member">
+      </a>
+      <a class="team-member" href="#">
         <div class="member-image" style="background-image: url(./assets/images/placerholder.png)"></div>
         <div class="member-title">
+          <h2>PUBLICIST</h2>
           <h1>Sacheth V N</h1>
-          <h2>Publicist</h2>
         </div>
-      </div>
+      </a>
     </div>
     <!-- THE FACULTY  -->
-    <h1 id="team-title">FACULTY IN-CHARGE</h1>
+    <h1 class="primary-title">FACULTY IN-CHARGE</h1>
+    <hr class="line-hr">
     <div class="team">
-      <div class="team-member">
+      <a class="team-member" href="#">
         <div class="member-image" style="background-image: url(./assets/images/placerholder.png)"></div>
         <div class="member-title">
+          <h2>ASSISTANT PROFESSOR<br>ECE, NIE MYSORE</h2>
           <h1>Dr.Yajunath K</h1>
-          <h2>Assistant Professor</h2>
-          <h2>ECE, NIE Mysore</h2>
         </div>
-      </div>
-      <div class="team-member">
+      </a>
+      <a class="team-member" href="#">
         <div class="member-image" style="background-image: url(./assets/images/placerholder.png)"></div>
         <div class="member-title">
+          <h2>ASSISTANT PROFESSOR<br>ECE, NIE MYSORE</h2>
           <h1>Mrs. Shruthi R</h1>
-          <h2>Assistant Professor</h2>
-          <h2>ECE, NIE Mysore</h2>
         </div>
-      </div>
-      <div class="team-member">
+      </a>
+      <a class="team-member" href="#">
         <div class="member-image" style="background-image: url(./assets/images/placerholder.png)"></div>
         <div class="member-title">
+          <h2>ASSISTANT PROFESSOR<br>ECE, NIE MYSORE</h2>
           <h1>Mrs. Deepthi M S</h1>
-          <h2>Assistant Professor</h2>
-          <h2>ECE, NIE Mysore</h2>
         </div>
-      </div>
+      </a>
     </div>
+
     <!-- PATRONS AND COMMITTEE  -->
     <div class="patrons-committee">
       <div class="patrons-section">
-        <h2 class="patrons-title">Chief Patrons</h1>
+        <h1 class="primary-title">CHIEF PATRONS</h1>
+        <hr class="line-hr">
         <ul class="patrons-list">
           <li class="patron">
-            <h2 class="patron-name">Dr. Rohini Nagapadma</h2>
-            <h4 class="patron-position">Principal, NIE Mysore</h4>
+            <h3 class="patron-name">Dr. Rohini Nagapadma</h2>
+            <h5 class="patron-position">PRINCIPAL, NIE MYSURU</h4>
           </li>
           <li class="patron">
-            <h2 class="patron-name">Dr. M S Ganesh Prasad</h2>
-            <h4 class="patron-position">Vice Principal, NIE Mysore</h4>
+            <h3 class="patron-name">Dr. M S Ganesh Prasad</h2>
+            <h5 class="patron-position">VICE PRINCIPAL, NIE MYSURU</h4>
           </li>
         </ul>
       </div>
       <!-- USING SAME CLASSES AS USED FOR PATRONS  -->
       <div class="committee-section">
-        <h2 class="patrons-title">Advisory Committee</h1>
-          <ul class="patrons-list">
-            <li class="patron">
-              <h2 class="patron-name">Dr. Rohini Nagapadma</h2>
-              <h4 class="patron-position">Principal, NIE Mysore</h4>
-            </li>
-            <li class="patron">
-              <h2 class="patron-name">Dr. M S Ganesh Prasad</h2>
-              <h4 class="patron-position">Vice Principal, NIE Mysore</h4>
-            </li>
-          </ul>
+        <h1 class="primary-title">ADVISORY COMMITTEE</h1>
+        <hr class="line-hr">
+        <ul class="committee-list">
+          <li class="committee">
+            <h3 class="patron-name">Dr. Parameshwara S</h3>
+            <h5 class="patron-position">Associate Professor &amp; Head, ECE, NIE Mysore</h5>
+          </li>
+          <li class="committee">
+            <h3 class="patron-name">Dr. Shashidhara H R</h3>
+            <h5 class="patron-position">Associate Professor, ECE, NIE Mysore</h5>
+          </li>
+          <li class="committee">
+            <h3 class="patron-name">Dr. Anjanappa C</h3>
+            <h5 class="patron-position">Associate Professor, ECE, NIE Mysore</h5>
+          </li>
+          <li class="committee">
+            <h3 class="patron-name">Dr. Remya Jayachandran</h3>
+            <h5 class="patron-position">Assistant Professor, ECE, NIE Mysore</h5>
+          </li>
+          <li class="committee">
+            <h3 class="patron-name">Mrs. Kavitha S S</h3>
+            <h5 class="patron-position">Assistant Professor, ECE, NIE Mysore</h5>
+          </li>
+          <li class="committee">
+            <h3 class="patron-name">Mr. Puneeth S</h3>
+            <h5 class="patron-position">Assistant Professor, ECE, NIE Mysore</h5>
+          </li>
+        </ul>        
       </div>  
     </div>
   </div>
