@@ -17,15 +17,15 @@ $(window).resize(() => {
 // Code for ACTIVITY CARDS
 
 var activityCards = $(".activity-card");
-var activityInfoCards = $(".activity-info-container");
+var activityInfoContainer = $(".activity-info-container");
 var activityInfoCard = $(".activity-info-card");
 
 activityCards.click(() => {
-    activityInfoCards.css("visibility", "visible");
+    activityInfoContainer.css("visibility", "visible");
     activityInfoCard.addClass("info-card-in");
 })
 
-activityInfoCards.click(() => {
-    activityInfoCards.css("visibility", "hidden");
+activityInfoContainer.click(() => {
+    activityInfoContainer.css("visibility", "hidden");
     activityInfoCard.removeClass("info-card-in");
 })
