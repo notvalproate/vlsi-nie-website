@@ -20,9 +20,10 @@ a {
 /* NAVBAR STYLES  */
 
 nav {
-    z-index: 9999;
+    z-index: 999;
     position: fixed !important;
     width: 100%;
+    top: 0;
 }
 
 /* SCROLLBAR  */
@@ -62,9 +63,12 @@ nav {
 /* VISION SECTION STYLES  */
 
 .vision-section {
+    z-index: -2;
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    width: 100vw;
     height: 100vh;
+    top: 0;
 }
 
 .vision-bg {
@@ -72,8 +76,8 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     filter: brightness(60%);
 }
 
@@ -97,6 +101,7 @@ nav {
 /* ACTIVITY SECTION STYLES  */
 
 .activity-section {
+    margin-top: 100vh;
     background-color: #F6F6F2;
     padding: 50px 0%;
 }
@@ -149,8 +154,17 @@ nav {
 /* MISSION SECTION STYLES  */
 
 .mission-section {
-    margin: 80px auto;
-    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/lowpoly.png);
+    height: 100%;
+}
+
+.mission-container {
+    margin: 0px auto;
+    padding: 80px 10%;
+    width: 100%;
     text-align: center;
 }
 
@@ -178,6 +192,7 @@ nav {
 .team-section {
     position: relative;
     padding: 100px 0 100px;
+    background-color: #dbe3e5;
 }
 
 .team {
@@ -305,4 +320,25 @@ nav {
     .committee-list {
         grid-template-columns: auto;
     }
+}
+
+/* SVG STUFF  */
+.custom-shape-divider-top-1683784624 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1683784624 svg {
+    position: relative;
+    display: block;
+    width: calc(206% + 1.3px);
+    height: 64px;
+}
+
+.custom-shape-divider-top-1683784624 .shape-fill {
+    fill: #F6F6F2;
 }
