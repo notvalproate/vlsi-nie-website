@@ -17,6 +17,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 /* NAVBAR STYLES  */
 
 nav {
@@ -578,6 +583,163 @@ ul.dashed>li:before {
     }
 }
 
+/* FOOTER */
+.footer-container:before {
+    background: #6FB3B8;
+    height: 10px;
+    width: 100%;
+    content: "";
+    display: block;
+    position: relative;
+    top: -50px;
+    opacity: .6;
+}
+
+.footer-container {
+    background-color: #388087;
+    padding: 40px 0;
+    z-index: 22;
+    position: relative;
+    margin: -3px 0 0 0;
+}
+
+.footer {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #BADFE7;
+}
+
+.footer li {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #BADFE7;
+}
+
+.footer a {
+    color: #BADFE7;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #C2EDCE;
+}
+
+.footer-logo {
+    background: #dbe3e5;
+    padding: 30px 40px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    margin-top: -70px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.footer .fa {
+    font-size: 23px;
+    margin: 0 13px;
+}
+
+/* credits stuff  */
+
+.credits-container {
+    background: #dbe3e5;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.credits:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.credits {
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.credits-container p {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #6FB3B8;
+}
+
+.credits-container a {
+    color: #388087;
+    text-decoration: none;
+}
+
+.credits-container a:hover {
+    color: #0f4e54;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .footer {
+        max-width: 96%;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .footer li {
+        font-size: 14px;
+    }
+
+    .credits-container p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: block;
+    }
+
+    .footer-col {
+        width: 90%;
+        margin: 0 auto 50px;
+        text-align: center;   
+    }
+
+    .footer-logo {
+        max-width: 300px;
+        margin: -60px auto 40px;
+    }
+
+}
 /* SVG STUFF  */
 
 /* team svg  */
