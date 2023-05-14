@@ -391,6 +391,20 @@ ul.dashed>li:before {
     height: 720px;
 }
 
+.quotation-up {
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.quotation-down {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
 .objectives-list {
     position: absolute;
     color: #388087;
@@ -423,6 +437,15 @@ ul.dashed>li:before {
         height: fit-content;
     }
     
+    .quotation-up {
+        top: 100px;
+        width: 80px;
+    }
+
+    .quotation-down {
+        width: 80px;
+    }
+
     .objectives-list {
         padding: 30px;
         font-size: 85%;
