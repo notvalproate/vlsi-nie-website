@@ -263,8 +263,14 @@ ul.dashed>li:before {
     filter: brightness(80%);
 }
 
-.info-title-container {
+.main-info {
+    background-color: #F6F6F2;
     margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.info-title-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -282,8 +288,8 @@ ul.dashed>li:before {
 }
 
 .info-subtitle {
+    margin-top: 10px;
     text-align: left;
-    margin: 10px 20px;
     color: #6FB3B8;
     font-weight: 400;
 }
@@ -303,7 +309,7 @@ ul.dashed>li:before {
 }
 
 .activity-info-card .line-hr {
-    margin: 10px 20px;
+    margin: 0px;
     width: 30%;
 }
 
@@ -311,10 +317,26 @@ ul.dashed>li:before {
     animation: pop-in 300ms cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 
+.register-section {
+    background-color: #6FB3B8;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
 .register-link {
-    color: #388087;
+    color: #dbe3e5;
     display: block;
     margin: 0 20px;
+}
+
+#form_link {
+    color: #C2EDCE;
+    transition: 100ms;
+}
+
+#form_link:hover {
+    color: #0f4e54;
 }
 
 .activity-qr {
@@ -358,7 +380,7 @@ ul.dashed>li:before {
     }
 
     .info-date-time {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .info-subtitle {
