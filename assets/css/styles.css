@@ -167,6 +167,7 @@ ul.dashed>li:before {
 }
 
 .activity-card:hover {
+    cursor: pointer;
     transform: translateY(-10px);
     box-shadow: 0px 0px 20px rgb(174, 174, 174);
 }
@@ -341,9 +342,12 @@ ul.dashed>li:before {
 
 @media only screen and (max-width: 700px) {
     .activity-info-hover {
+        background-color: #BADFE7;
+        padding: 4px 6px;
+        border-radius: 8px;
         color: #388087;
         position: absolute;
-        top: 65%;
+        top: 60%;
         left: 50%;
         opacity: 100%;
         transform: translateX(-50%);
