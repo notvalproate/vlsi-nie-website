@@ -427,11 +427,12 @@ ul.dashed>li:before {
 }
 
 .values-list{
-    margin: 100px 0 0 0;
+    margin: 100px auto 0;
     display: flex;
-    justify-content: space-around;
+    width: 90%;
+    justify-content: space-between;
     text-align: center;
-    background-image: linear-gradient(to right, #b2d4d5,#6fb3b8);
+    background-image: linear-gradient(to right,#C2EDCE, #b2d4d5, #C2EDCE,#6fb3b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -439,6 +440,8 @@ ul.dashed>li:before {
 .values-list li{
     display: flex;
     flex-direction: column;
+    width: 18%;
+    row-gap: 25px;
     font-size: 25px;
     align-items: center;
 }
@@ -450,14 +453,18 @@ ul.dashed>li:before {
 }
 
 @media screen and (max-width: 900px) {
+    .values-section {
+        padding-bottom: 0px;
+    }
     .values-list{
         flex-direction: column;
         gap: 30px;
-        margin: 30px 0 0 0;
-        background-image: linear-gradient(to bottom, #b2d4d5,#6fb3b8);
+        margin: 30px auto 0;
+        background-image: linear-gradient(to bottom,#C2EDCE, #b2d4d5, #C2EDCE,#6fb3b8);
     }
     .values-list li{
         margin: 10px auto;
+        font-size: 20px;
     }
 }
 
