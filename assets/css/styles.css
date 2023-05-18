@@ -204,6 +204,7 @@ ul.dashed>li:before {
 }
 
 .activity-card:hover {
+    cursor: pointer;
     transform: translateY(-10px);
     cursor: pointer;
     box-shadow: 0px 2px 20px 5px rgb(174, 174, 174);
@@ -379,9 +380,12 @@ ul.dashed>li:before {
 
 @media only screen and (max-width: 700px) {
     .activity-info-hover {
+        background-color: --var(--primary-color-lighter);
+        padding: 4px 6px;
+        border-radius: 8px;
         color: var(--primary-color-dark);
         position: absolute;
-        top: 65%;
+        top: 60%;
         left: 50%;
         opacity: 100%;
         transform: translateX(-50%);
@@ -443,11 +447,12 @@ ul.dashed>li:before {
 }
 
 .values-list{
-    margin: 100px 0 0 0;
+    margin: 100px auto 0;
     display: flex;
-    justify-content: space-around;
+    width: 90%;
+    justify-content: space-between;
     text-align: center;
-    background-image: linear-gradient(to right, var(--primary-color-light),var(--primary-color-dark));
+    background-image: linear-gradient(to right,#C2EDCE, #b2d4d5, #C2EDCE,#6fb3b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -455,6 +460,8 @@ ul.dashed>li:before {
 .values-list li{
     display: flex;
     flex-direction: column;
+    width: 18%;
+    row-gap: 25px;
     font-size: 25px;
     align-items: center;
 }
@@ -466,14 +473,18 @@ ul.dashed>li:before {
 }
 
 @media screen and (max-width: 900px) {
+    .values-section {
+        padding-bottom: 0px;
+    }
     .values-list{
         flex-direction: column;
         gap: 30px;
-        margin: 30px 0 0 0;
-        background-image: linear-gradient(to bottom, var(--primary-color-light),var(--primary-color-dark));
+        margin: 30px auto 0;
+        background-image: linear-gradient(to bottom,#C2EDCE, #b2d4d5, #C2EDCE,#6fb3b8);
     }
     .values-list li{
         margin: 10px auto;
+        font-size: 20px;
     }
 }
 
