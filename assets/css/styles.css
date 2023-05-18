@@ -453,6 +453,7 @@ ul.dashed>li:before {
     justify-content: space-between;
     text-align: center;
     background-image: linear-gradient(to right,var(--primary-color-dark), var(--primary-color-darker));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
