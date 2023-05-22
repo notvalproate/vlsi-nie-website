@@ -648,9 +648,20 @@ ul.dashed>li:before {
     margin-top: 15px;
 }
 
+.faculty-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .patrons-committee {
     width: 80%;
     margin: 0 auto;
+}
+
+.patrons-committee .team {
+    width: 100%;
+    justify-content: center;
+    column-gap: 100px;
 }
 
 .patrons-section {
