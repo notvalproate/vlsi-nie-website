@@ -40,25 +40,16 @@ fetch('assets/json/activities.json')
     var activityInfoContainer = $(".activity-info-container");
     var activityInfoCard = $(".activity-info-card");
 
-    var title = $("#title");
-    var date_time = $("#date-time");
-    var poster = $("#poster");
-    var venue = $("#venue");
-    var fee = $("#fee");
-    var description = $("#description");
-    var qr_code = $("#qr-code");
-    var form_link = $("#form_link")
-
     activityCards.each(function(index) {
         $(this).on('click', function() {
-            poster.attr("src", `${activities[index].poster_url}`);
-            title.html(`${activities[index].title}`);
-            date_time.html(`${activities[index].date_time}`);
-            venue.html(`${activities[index].venue}`);
-            fee.html(`${activities[index].fee}`);
-            description.html(`${activities[index].description}`);
-            qr_code.attr("src", `${activities[index].qr_code_url}`);
-            form_link.attr("href", `${activities[index].form_link}`);
+            $("#poster").attr("src", `${activities[index].poster_url}`);
+            $("#title").html(`${activities[index].title}`);
+            $("#date-time").html(`${activities[index].date_time}`);
+            $("#venue").html(`${activities[index].venue}`);
+            $("#fee").html(`${activities[index].fee}`);
+            $("#description").html(`${activities[index].description}`);
+            $("#qr-code").attr("src", `${activities[index].qr_code_url}`);
+            $("#form_link").attr("href", `${activities[index].form_link}`);
 
             activityInfoContainer.css("visibility", "visible");
             activityInfoCard.addClass("info-card-in");
