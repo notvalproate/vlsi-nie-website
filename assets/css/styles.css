@@ -100,6 +100,13 @@ nav .nav-icon{
     font-style: italic;
 }
 
+.no-activity {
+    margin: 150px;
+    color: var(--primary-color-light);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .line-hr {
     width: 60px;
     margin: 20px auto;
