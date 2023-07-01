@@ -10,7 +10,7 @@ html{
     --hover-color: #C2EDCE;
 }
 body {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Amaranth', sans-serif;
     background-color: black;
 }
 
@@ -180,14 +180,19 @@ ul.dashed>li:before {
 /* ACTIVITY SECTION STYLES  */
 
 .activity-section {
+    font-family: 'Graphik', sans-serif;
     position: relative;
     margin-top: 100vh;
-    background-color: black;
-    padding: 100px 0% 50px;
+    background-color: #141414;
+    padding: 100px 0 50px;
+}
+
+.activity-wrapper {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .activity-list {
-    width: 90%;
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
@@ -196,70 +201,66 @@ ul.dashed>li:before {
     row-gap: 30px;
 }
 
-.activity-card {
-    overflow: hidden;
-    position: relative;
+.new-activity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px;
     width: 300px;
-    height: 400px;
-    border: 1px white solid;
-    border-radius: 3px;
-    transition: all 150ms ease;
+    height: 550px;
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+    box-shadow: 15px 15px 20px black;
+    transition: 200ms;
+    border-top: 1px rgb(33, 33, 33) solid;
+    border-left: 1px rgb(33, 33, 33) solid;
 }
 
-.activity-card::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    top: 72%;
-    left: 0;
-    z-index: 1;
-    border-top: 4px solid white;
+.logo-date {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.activity-card:hover {
-    cursor: pointer;
-    transform: translateY(-10px);
-    cursor: pointer;
-}
-
-.activity-card:hover .activity-poster {
-    color: var(--hover-color);
-    filter: brightness(70%);
-}
-
-.activity-card:hover .activity-info-hover {
-    opacity: 100%;
+.activity-logo-icon {
+    width: 40px;
 }
 
 .activity-poster {
     object-fit: cover;
-    height: 72%;
-    width: 100%;
+    height: 260px;
     transition: 200ms;
 }
 
-.activity-title {
-    margin: 10px 10px 0;
-    color: #03e8f8;
-    transition: 200ms;
+.activity-info {
+    font-weight: 100;
+    font-size: 13px;
 }
 
-.activity-subtitle {
-    color: white;
-    display: block;
-    margin: 0 10px 10px;
+.register-wrapper {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.activity-info-hover {
-    color: white;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    z-index: 2;
-    opacity: 0%;
-    transform: translateX(-50%);
-    transition: 200ms;
+.register-button {
+    font-size: 12px;
+    padding: 3px 12px;
+    background-color: rgb(188, 188, 188);
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+    border-radius: 6px;
 }
+
+.new-activity-card:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+
+
+/* ACTIVITY INFO HOVER  */
 
 .activity-info-container {
     visibility: hidden;
@@ -273,6 +274,8 @@ ul.dashed>li:before {
 }
 
 .activity-info-card {
+    font-family: 'Amaranth', sans-serif;
+    color: white;
     text-align: center;
     width: 60%;
     height: fit-content;
@@ -280,23 +283,20 @@ ul.dashed>li:before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #dbe3e5;
-    border-radius: 15px;
+    background-color: #141414;
     overflow: hidden;
-    box-shadow: 0px 0px 40px var(--primary-color-light);
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
 .activity-info-card .activity-poster {
     height: 100px;
+    width: 100%;
     transition: 0ms;
     filter: brightness(80%);
 }
 
 .main-info {
-    background-color: var(--primary-color-lightest);
     margin: 20px;
-    padding: 15px;
-    border-radius: 15px;
 }
 
 .info-title-container {
@@ -306,33 +306,34 @@ ul.dashed>li:before {
 }
 
 .info-title {
+    font-family: 'TheBoldFont';
     text-align: left;
-    color: var(--primary-color-dark);
     font-weight: 600;
 }
 
 .info-date-time {
+    font-family: 'TheBoldFont';
     text-align: left;
-    color: var(--primary-color-dark);
 }
 
 .info-subtitle {
+    color: white;
+    font-family: 'TheBoldFont';
     margin-top: 10px;
     text-align: left;
-    color: var(--primary-color-light);
-    font-weight: 400;
 }
 
 .info-subtitle .info-data {
-    color: var(--primary-color-dark);
+    color: rgb(171, 171, 171);
     font-size: 80%;
 }
 
 .info-description {
+    font-size: 15px;
     text-align: left;
-    color: var(--primary-color-dark);
     margin: 20px;
-    background-color: var(--primary-color-lightest);
+    background-color: #141414;
+    box-shadow: 2px 2px 20px black;
     padding: 10px;
     border-radius: 5px;
 }
@@ -347,7 +348,6 @@ ul.dashed>li:before {
 }
 
 .register-section {
-    background-color: var(--primary-color-light);
     margin: 20px;
     border-radius: 15px;
     padding: 15px;
@@ -360,12 +360,12 @@ ul.dashed>li:before {
 }
 
 #form_link {
-    color: var(--hover-color);
+    color: rgb(116, 116, 116);
     transition: 100ms;
 }
 
 #form_link:hover {
-    color: var(--primary-color-darker);
+    color: rgb(35, 248, 255);
 }
 
 .activity-qr {
@@ -386,7 +386,11 @@ ul.dashed>li:before {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 769px) {
+    .activity-section {
+        padding: 75px 0;
+    }
+
     .activity-info-hover {
         background-color: --var(--primary-color-lighter);
         padding: 4px 6px;
@@ -427,10 +431,12 @@ ul.dashed>li:before {
 /* MISSION SECTION STYLES  */
 
 .mission-section {
+    background-image: url("../../vlsi_assets/mission_pic.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/lowpoly.png);
+    background-position-x: 300px;
+    position: relative;
+    background-color: #0b0210;
     height: 100%;
 }
 
@@ -438,22 +444,41 @@ ul.dashed>li:before {
     margin: 0px auto;
     padding: 80px 10%;
     width: 100%;
-    text-align: center;
 }
 
 .mission-section p {
-    color: var(--primary-color-light);
-    font-style: italic;
+    margin: 100px 0px;
+    width: 30%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media only screen and (max-width: 1368px) {
+    .mission-section p {
+        margin: 30px 0px;
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mission-section {
+        background-position-x: 100px;
+    }
+    
+    .mission-section p {
+        width: 70%;
+    }
 }
 
 /* VALUES SECTION STYLES */
 
 .values-section {
-    width: 100vw;
+    width: 100%;
 }
 
 .values-wrapper {
-    width: 75%;
+    width: 80%;
     margin: 100px auto;
 }
 

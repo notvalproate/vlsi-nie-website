@@ -49,16 +49,21 @@ fetch('assets/json/activities.json')
 
     activities.forEach(element => {
         activityList.append(`
-        <a class="activity-card">
-            <img src="${element.poster_url}" class="activity-poster">
-            <span class="activity-info-hover">Click for more info</span>
-            <h2 class="activity-title">${element.title}</h2>
-            <span class="activity-subtitle">${element.subtitle}</span>
+        <a class="new-activity-card">
+          <div class="logo-date">
+            <img class="activity-logo-icon" src="vlsi_assets/activities_card/v_icon_card-18.png" alt="icon.png">
+            <span class="activity-date">${element.date_time_short}</span>
+          </div>
+          <img src="${element.poster_url}" alt="placeholder.png" class="activity-poster">
+          <p class="activity-info">${element.subtitle}</p>
+          <div class="register-wrapper">
+            <div class="register-button">REGISTER</div>
+          </div>
         </a>
       `)
     });
 
-    var activityCards = $(".activity-card");
+    var activityCards = $(".new-activity-card");
     var activityInfoContainer = $(".activity-info-container");
     var activityInfoCard = $(".activity-info-card");
 

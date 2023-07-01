@@ -2,3 +2,8 @@
     font-family: TheBoldFont;
     src: url("../fonts/THEBOLDFONT.ttf");
 }
+
+@font-face {
+    font-family: Graphik;
+    src: url("../fonts/GraphikRegular.otf");
+}
