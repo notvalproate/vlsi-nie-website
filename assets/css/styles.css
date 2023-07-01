@@ -44,10 +44,12 @@ nav {
 
 .navbar{
     background-color: black !important;
+    padding: 0;
 }
 .navbar-brand{
     font-weight: 600;
     font-size: 1.5rem;
+    height: 100%;
     color: var(--primary-color-lightest) !important;
 }
 .nav-link, .navbar-brand{
@@ -55,8 +57,21 @@ nav {
 }
 
 .navbar-toggler{
-    filter: invert(1);
     border: none !important;
+    position: relative;
+}
+
+.navbar-toggler-gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: overlay;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+.navbar-toggler-icon{
+    filter: invert(1);
 }
 
 .navbar-toggler:focus{
@@ -65,9 +80,7 @@ nav {
 }
 
 nav .nav-icon{
-    filter: invert(1);
-   height: 30px;
-    width: 30px;
+    height: 65px;
 }
 
 /* SCROLLBAR  */
