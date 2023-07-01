@@ -8,6 +8,8 @@ html{
     --primary-color-lighter-transpartent: #BADFE780;
     --primary-color-lightest:#F6f6f2;
     --hover-color: #C2EDCE;
+    --gradient-start: #017ad8;
+    --gradient-end: #0dfef4;
 }
 body {
     font-family: 'Amaranth', sans-serif;
@@ -88,11 +90,12 @@ nav .nav-icon{
 
 /* general purpose classes  */
 
-.gradient-heading {
-    text-align: left;
+.gradient {
     color: white;
     font-family: 'TheBoldFont', sans-serif;
-    font-size: 3.5rem;
+    background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .primary-title {
@@ -493,88 +496,69 @@ ul.dashed>li:before {
 
 /* OBJECTIVES SECTION STYLES  */
 
-.objectives-section {
-    position: relative;
-    background-color: var(--primary-color-lightest);
-    padding: 60px;
-    height: 720px;
-}
-
-.quotation-up {
-    z-index: 10;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-.quotation-down {
-    z-index: 10;
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-}
-
-.objectives-list {
-    position: absolute;
-    color: var(--primary-color-dark);
+.objectives-section{
+    margin: 50px 0;
+    min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    row-gap: 20px;
-    list-style: disc;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px rgb(174, 174, 174);
+    gap: 20px;
 }
 
-.objectives-list:nth-of-type(1) {
-    left: 15%;
-    width: 50%;
-    background-color: #dbe3e5;
-}
+.objectives-main {
+    background-image: url('../../vlsi_assets/objectives/obj_box2-15.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; 
+    width: 80%;
+    position: relative;
+  }
+  .carousel{
+    height: 100%;
+  }
+  /* .carousel-item{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  } */
+  .carousel-item-right, .carousel-item-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-item-left p{
+    color: white;
+    padding: 0 0 0 30%;
+  }
+  .carousel-item-right, .carousel-inner, .carousel-item{
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-item-right img{
+    width: 90%;
+  }
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 1024px) {
+    .carousel-item-right img{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width:576px) {
+    .carousel-item-next, .carousel-item-prev, .carousel-item.active{
+        display: grid !important;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+      }
+        .carousel-item-left p{
+            color: white;
+            padding: 0 10%;
+        }
+  }
+  
 
-.objectives-list:nth-of-type(2) {
-    right: 15%;
-    top: 55%;
-    width: 40%;
-    background-color: var(--primary-color-light);
-    color: var(--primary-color-lightest);
-}
-
-@media only screen and (max-width: 900px) {
-    .objectives-section {
-        padding: 60px 10px 10px;
-        height: fit-content;
-    }
-    
-    .quotation-up {
-        top: 100px;
-        width: 80px;
-    }
-
-    .quotation-down {
-        width: 80px;
-    }
-
-    .objectives-list {
-        padding: 30px;
-        font-size: 85%;
-        position: static;
-        margin: 20px auto;
-    }
-    
-    .objectives-list:nth-of-type(1) {
-        left: 40%;
-        transform: translateX(0%);
-        width: 85%;
-    }
-    
-    .objectives-list:nth-of-type(2) {
-        right: 30%;
-        top: 55%;
-        transform: translateX(0%);
-        width: 85%;
-    }
-}
 
 /* TEAM SECTION STYLES */
 
