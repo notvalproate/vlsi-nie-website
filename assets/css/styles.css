@@ -11,7 +11,7 @@ html{
 }
 body {
     font-family: 'Exo', sans-serif;
-    background-color: #dbe3e5;
+    background-color: black;
 }
 
 h1 {
@@ -41,7 +41,7 @@ nav {
 }
 
 .navbar{
-    background-color: var(--primary-color-dark) !important;
+    background-color: black !important;
 }
 .navbar-brand{
     font-weight: 600;
@@ -90,11 +90,11 @@ nav .nav-icon{
 
 .primary-title {
     font-weight: 600;
-    color: var(--primary-color-dark);
+    color: white;
 }
 
 .primary-subtitle {
-    color: var(--primary-color-light);
+    color: white;
     font-size: 1.2rem;
     text-align: center;
     font-style: italic;
@@ -112,7 +112,7 @@ nav .nav-icon{
     margin: 20px auto;
     border-style: solid;
     border-width: 1px;
-    border-color: var(--primary-color-light);
+    border-color: #03E8F8;
     opacity: 100%;
 }
 
@@ -176,7 +176,7 @@ ul.dashed>li:before {
 .activity-section {
     position: relative;
     margin-top: 100vh;
-    background-color: var(--primary-color-lightest);
+    background-color: black;
     padding: 100px 0% 50px;
 }
 
@@ -195,8 +195,8 @@ ul.dashed>li:before {
     position: relative;
     width: 300px;
     height: 400px;
-    border-radius: 5%;
-    box-shadow: 0px 0px 4px rgb(174, 174, 174);
+    border: 1px white solid;
+    border-radius: 3px;
     transition: all 150ms ease;
 }
 
@@ -207,18 +207,13 @@ ul.dashed>li:before {
     top: 72%;
     left: 0;
     z-index: 1;
-    border-top: 4px solid var(--primary-color-dark);
+    border-top: 4px solid white;
 }
 
 .activity-card:hover {
     cursor: pointer;
     transform: translateY(-10px);
     cursor: pointer;
-    box-shadow: 0px 2px 20px 5px rgb(174, 174, 174);
-}
-
-.activity-card:hover .activity-title {
-    color: var(--hover-color);
 }
 
 .activity-card:hover .activity-poster {
@@ -239,18 +234,18 @@ ul.dashed>li:before {
 
 .activity-title {
     margin: 10px 10px 0;
-    color: var(--primary-color-dark);
+    color: #03e8f8;
     transition: 200ms;
 }
 
 .activity-subtitle {
-    color: var(--primary-color-light);
+    color: white;
     display: block;
     margin: 0 10px 10px;
 }
 
 .activity-info-hover {
-    color: var(--primary-color-lighter);
+    color: white;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -803,6 +798,10 @@ ul.dashed>li:before {
     -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    width: 200px;
 }
 
 .footer .fa {
