@@ -82,7 +82,7 @@ nav {
     transform-origin: bottom left;
   }
 
-.navbar-toggler-gradient{
+.gradient-overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -148,7 +148,7 @@ nav .dropdown-menu a:hover, nav.dropdown-menu a:focus{
 .primary-subtitle {
     color: white;
     font-size: 1.2rem;
-    text-align: center;
+    /* text-align: center; */
     font-style: italic;
 }
 
@@ -311,11 +311,12 @@ ul.dashed>li:before {
     visibility: hidden;
     position: fixed;
     z-index: 999;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
+    overflow: scroll;
 }
 
 .activity-info-card {
@@ -329,7 +330,7 @@ ul.dashed>li:before {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--dark-grey);
-    overflow: hidden;
+    overflow: scroll;
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -620,11 +621,11 @@ ul.dashed>li:before {
 .team-section {
     position: relative;
     padding: 100px 0 100px;
-    background-color: #dbe3e5;
+    background-color: black;
 }
 
 .team {
-    background-color: #ebf0f1;
+    background-color: var(--dark-grey);
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -645,8 +646,8 @@ ul.dashed>li:before {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 0px 4px rgb(174, 174, 174);
-    background-color: var(--primary-color-lightest);
+    box-shadow: 0px 0px 4px rgb(105, 105, 105);
+    background-color: black;
     transition: 200ms;
 }
 
@@ -656,7 +657,7 @@ ul.dashed>li:before {
 }
 
 .team-member:hover .member-title h1{
-    color: var(--hover-color);
+    color: white;
 }
 
 
@@ -675,17 +676,17 @@ ul.dashed>li:before {
 }
 
 .member-title h1 {
-    color: #0c1212;
+    color: var(--light-grey);
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
     transition: 200ms;
 }
 
 .member-title h2 {
-    color: var(--primary-color-light);
+    color: white;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 300;
     margin-top: 15px;
 }
 
@@ -716,7 +717,7 @@ ul.dashed>li:before {
     align-items: center;
     flex-direction: column;
     row-gap: 20px;
-    background-color: #ebf0f1;
+    background-color: var(--dark-grey);
     border-radius: 20px;
     margin: 5vh 0;
     box-shadow: 0px 0px 4px rgb(196, 196, 196);
@@ -725,7 +726,7 @@ ul.dashed>li:before {
 .patron {
     width: 80%;
     padding: 20px;
-    background-color: var(--primary-color-lightest);
+    background-color: black;
     box-shadow: 0px 0px 2px rgb(174, 174, 174);
     border-radius: 10px;
     text-align: center;
@@ -733,10 +734,11 @@ ul.dashed>li:before {
 
 .patron-name {
     font-weight: 600;
+    color: white;
 }
 
 .patron-position {
-    color: var(--primary-color-light);
+    color: var(--light-grey);
     font-weight: 100;
 }
 
@@ -747,14 +749,14 @@ ul.dashed>li:before {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    background-color: #ebf0f1;
+    background-color: var(--dark-grey);
     border-radius: 20px;
     box-shadow: 0px 0px 4px rgb(196, 196, 196);
 }
 
 .committee {
     box-shadow: 0px 0px 2px rgb(174, 174, 174);
-    background-color: var(--primary-color-lightest);
+    background-color: black;
     border-radius: 10px;
     padding: 20px;
 }
@@ -821,10 +823,20 @@ ul.dashed>li:before {
 .footer a {
     color: var(--light-grey);
     text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.footer a .gradient-overlay{
+    mix-blend-mode: darken;
 }
 
 .footer a:hover {
     color: white;
+}
+
+.footer > div > span{
+    font-size: 1.3rem;
 }
 
 .footer-logo {
@@ -844,7 +856,7 @@ ul.dashed>li:before {
 }
 
 .footer .fa {
-    font-size: 23px;
+    font-size: 25px;
     margin: 0 13px;
 }
 
@@ -887,7 +899,9 @@ ul.dashed>li:before {
     /* text-decoration: underline; */
     position: relative;
 }
-
+.credits-container a:hover{
+    cursor: pointer;
+}
 
 
 
@@ -949,7 +963,7 @@ ul.dashed>li:before {
 }
 
 .custom-shape-divider-top-1683784624 .shape-fill {
-    fill: var(--primary-color-lightest);
+    fill: var(--dark-grey);
 }
 
 /* Activities top svg  */
