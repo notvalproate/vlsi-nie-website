@@ -91,7 +91,10 @@ nav .nav-icon{
 /* general purpose classes  */
 
 .gradient {
+    width: fit-content;
     color: white;
+    text-align: left;
+    font-size: 3.5rem;
     font-family: 'TheBoldFont', sans-serif;
     background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
     -webkit-background-clip: text;
@@ -497,22 +500,25 @@ ul.dashed>li:before {
 /* OBJECTIVES SECTION STYLES  */
 
 .objectives-section{
-    margin: 50px 0;
+    background-color: #141414;
+    padding: 100px 0px;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+}
+
+.objectives-wrapper {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .objectives-main {
-    background-image: url('../../vlsi_assets/objectives/obj_box2-15.png');
-    background-position: center;
-    background-repeat: no-repeat;
+
     height: 60vh; 
-    width: 80%;
+    margin: 50px 0;
+    width: 100%;
     position: relative;
+    box-shadow: 15px 15px 20px black;
+    border-top: 1px rgb(33, 33, 33) solid;
+    border-left: 1px rgb(33, 33, 33) solid;
   }
   .carousel{
     height: 100%;
@@ -527,6 +533,7 @@ ul.dashed>li:before {
     align-items: center;
   }
   .carousel-item-left p{
+    font-size: 2rem;
     color: white;
     padding: 0 0 0 30%;
   }
@@ -542,11 +549,20 @@ ul.dashed>li:before {
     grid-template-columns: 1fr 1fr;
   }
   @media screen and (max-width: 1024px) {
+    .carousel-item-left p {
+        font-size: 1.5rem;
+    }
     .carousel-item-right img{
         width: 100%;
     }
   }
   @media screen and (max-width:576px) {
+    .carousel-item-left p {
+        font-size: 1.2rem;
+    }
+    .carousel-main {
+        padding-top: 50px;
+    }
     .carousel-item-next, .carousel-item-prev, .carousel-item.active{
         display: grid !important;
         grid-template-rows: 1fr 1fr;
