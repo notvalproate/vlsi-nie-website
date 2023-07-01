@@ -88,6 +88,12 @@ nav .nav-icon{
 
 /* general purpose classes  */
 
+.gradient-heading {
+    color: white;
+    font-family: 'TheBoldFont', sans-serif;
+    font-size: 3.5rem;
+}
+
 .primary-title {
     font-weight: 600;
     color: white;
@@ -443,36 +449,7 @@ ul.dashed>li:before {
 /* VALUES SECTION STYLES */
 
 .values-section {
-    position: relative;
-    background-color: var(--primary-color-lightest);
-    padding: 60px 20px;
-}
 
-.values-list{
-    margin: 100px auto 0;
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    text-align: center;
-    background-image: linear-gradient(to right,var(--primary-color-dark), var(--primary-color-darker));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.values-list li{
-    display: flex;
-    flex-direction: column;
-    width: 18%;
-    row-gap: 25px;
-    font-size: 25px;
-    align-items: center;
-}
-
-.values-list i{
-    font-size: 40px;
-    height: 40px;
-    width: 40px;
 }
 
 @media screen and (max-width: 900px) {
