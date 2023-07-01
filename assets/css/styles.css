@@ -89,6 +89,7 @@ nav .nav-icon{
 /* general purpose classes  */
 
 .gradient-heading {
+    text-align: left;
     color: white;
     font-family: 'TheBoldFont', sans-serif;
     font-size: 3.5rem;
@@ -115,7 +116,6 @@ nav .nav-icon{
 
 .line-hr {
     width: 60px;
-    margin: 20px auto;
     border-style: solid;
     border-width: 1px;
     border-color: #03E8F8;
@@ -449,23 +449,21 @@ ul.dashed>li:before {
 /* VALUES SECTION STYLES */
 
 .values-section {
+    width: 100vw;
+}
 
+.values-wrapper {
+    width: 75%;
+    margin: 100px auto;
+}
+
+.values-img {
+    margin-top: 50px;
+    width: 100%;
 }
 
 @media screen and (max-width: 900px) {
-    .values-section {
-        padding-bottom: 0px;
-    }
-    .values-list{
-        flex-direction: column;
-        gap: 30px;
-        margin: 30px auto 0;
-        background-image: linear-gradient(to bottom,var(--primary-color-dark),var(--primary-color-darker));
-    }
-    .values-list li{
-        margin: 10px auto;
-        font-size: 20px;
-    }
+
 }
 
 /* OBJECTIVES SECTION STYLES  */
