@@ -630,30 +630,27 @@ ul.dashed>li:before {
     justify-content: space-around;
     width: 80%;
     padding: 20px 20px;
-    border-radius: 20px;
     flex-wrap: wrap;
     margin: 5vh auto;
     column-gap: 2vw;
     row-gap: 8vw;
-    box-shadow: 0px 0px 4px rgb(196, 196, 196);
+    box-shadow: 10px 10px 4px rgb(17, 17, 17);
 }
 
 .team-member {
     width: 240px;
     padding: 20px;
-    border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 0px 4px rgb(105, 105, 105);
     background-color: black;
     transition: 200ms;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 0px 10px rgb(174, 174, 174);
 }
 
 .team-member:hover .member-title h1{
@@ -664,7 +661,6 @@ ul.dashed>li:before {
 .member-image {
     width: 200px;
     height: 200px;
-    border-radius: 5%;
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
@@ -718,17 +714,14 @@ ul.dashed>li:before {
     flex-direction: column;
     row-gap: 20px;
     background-color: var(--dark-grey);
-    border-radius: 20px;
     margin: 5vh 0;
-    box-shadow: 0px 0px 4px rgb(196, 196, 196);
 }
 
 .patron {
     width: 80%;
     padding: 20px;
     background-color: black;
-    box-shadow: 0px 0px 2px rgb(174, 174, 174);
-    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -750,14 +743,11 @@ ul.dashed>li:before {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     background-color: var(--dark-grey);
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px rgb(196, 196, 196);
 }
 
 .committee {
-    box-shadow: 0px 0px 2px rgb(174, 174, 174);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
     background-color: black;
-    border-radius: 10px;
     padding: 20px;
 }
 
@@ -858,6 +848,11 @@ ul.dashed>li:before {
 .footer .fa {
     font-size: 25px;
     margin: 0 13px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
 }
 
 /* credits stuff  */
