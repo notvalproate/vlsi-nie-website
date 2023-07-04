@@ -1,35 +1,28 @@
-// Code for setting the brightness of VISION SECTION dynamically
-
 var viewportHeight = window.innerHeight;
 var viewportWidth = window.innerHeight;
 var visionSection = $(".vision-section");
+
+setValuesBanner();
 
 function getScrollPosition() {
     visionSection.attr("style", `filter: brightness( ${ 100 - ((window.scrollY * 100) / viewportHeight)}% )`);
 }
 
-// Update the two variables in resize of window
 $(window).resize(() => {
     viewportHeight = window.innerHeight;
     viewportWidth = window.innerWidth;
+
+    setValuesBanner();
 })
 
-// Code for ACTIVITY CARDS
-
-// Code for dynamically adding the cards
-
-// TEMPLATE FOR ADDING OBJECTS IN THE JSON
-// {
-//   "title":"AMD Processors",
-//   "subtitle":"Come here to check out how AMD makes it's processors",
-//   "poster_url":"./assets/images/activity-placeholder.png",
-//   "date_time":"6:00PM, May 16",
-//   "venue":"GJB, NIdE",
-//   "fee":"Free for All",
-//   "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur officia voluptates unde ab magnam sit possimus. Ut, sequi, magni cum veniam sed totam es.",
-//   "qr_code_url":"./assets/images/qr-code.png",
-//   "form_link":"https://www.amd.com"
-// },
+function setValuesBanner() {
+  if(viewportWidth < 700) {
+    $("#values-banner").attr("src", "./vlsi_assets/values/final-vertical.png");
+  } 
+  else {
+    $("#values-banner").attr("src", "./vlsi_assets/values/final.png");
+  }
+}
 
 var activityList = $(".activity-list");
 
@@ -44,8 +37,6 @@ fetch('assets/json/activities.json')
       `);
       return;
     }
-
-    console.log("hi");
 
     activities.forEach(element => {
         activityList.append(`
