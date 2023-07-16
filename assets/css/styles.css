@@ -565,6 +565,19 @@ ul.dashed>li:before {
   .carousel{
     height: 100%;
   }
+  
+  .carousel-item{
+    grid-template-areas: "right left" !important;
+  }
+  .carousel-item:nth-child(2n){
+    grid-template-areas: "left right" !important;
+  }
+  .carousel-item-left{
+    grid-area: left;
+  }
+  .carousel-item-right{
+    grid-area: right;
+  }
   .carousel-item-right, .carousel-item-left{
     display: flex;
     justify-content: center;
