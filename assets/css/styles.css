@@ -283,7 +283,7 @@ ul.dashed>li:before {
 .register-button {
     font-size: 12px;
     padding: 3px 12px;
-    background-color: rgb(188, 188, 188);
+    background: rgb(188, 188, 188);
     color: black;
     font-weight: bold;
     text-align: right;
@@ -292,8 +292,13 @@ ul.dashed>li:before {
 }
 
 .new-activity-card:hover {
-    cursor: pointer;
-    transform: translateY(-15px);
+    transition-delay: 0ms !important;
+    cursor: pointer !important;
+    transform: translateY(-15px) !important;
+}
+
+.new-activity-card:hover .register-button {
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
 }
 
 
@@ -830,7 +835,7 @@ ul.dashed>li:before {
 }
 
 .footer-logo-img {
-    width: 200px;
+    width: 300px;
 }
 
 .footer .fa {

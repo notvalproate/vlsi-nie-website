@@ -2,6 +2,8 @@ var viewportHeight = window.innerHeight;
 var viewportWidth = window.innerHeight;
 var visionSection = $(".vision-section");
 
+AOS.init();
+
 setValuesBanner();
 
 function getScrollPosition() {
@@ -25,6 +27,7 @@ function setValuesBanner() {
 }
 
 var activityList = $(".activity-list");
+var delay = 0;
 
 fetch('assets/json/activities.json')
   .then(response => response.json())
@@ -40,7 +43,7 @@ fetch('assets/json/activities.json')
 
     activities.forEach(element => {
         activityList.append(`
-        <a class="new-activity-card">
+        <a class="new-activity-card" data-aos="flip-right" data-aos-duration="400" data-aos-anchor-placement="top-center" data-aos-delay="${delay}">
           <div class="logo-date">
             <img class="activity-logo-icon" src="vlsi_assets/activities_card/v_icon_card-18.png" alt="icon.png">
             <span class="activity-date">${element.date_time_short}</span>
@@ -52,6 +55,7 @@ fetch('assets/json/activities.json')
           </div>
         </a>
       `)
+      delay += 200;
     });
 
     var activityCards = $(".new-activity-card");
