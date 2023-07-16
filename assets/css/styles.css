@@ -560,10 +560,6 @@ ul.dashed>li:before {
   .carousel{
     height: 100%;
   }
-  /* .carousel-item{
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-  } */
   .carousel-item-right, .carousel-item-left{
     display: flex;
     justify-content: center;
@@ -611,7 +607,12 @@ ul.dashed>li:before {
         }
   }
   
-
+.objectives-attrib {
+    position: absolute;
+    right: 10%;
+    text-decoration: none;
+    color: rgb(84, 84, 84);
+}
 
 /* TEAM SECTION STYLES */
 
@@ -892,8 +893,6 @@ ul.dashed>li:before {
 }
 
 
-
-
 @media (max-width: 1280px) {
     .footer {
         max-width: 96%;
@@ -914,6 +913,10 @@ ul.dashed>li:before {
 }
 
 @media (max-width: 768px) {
+    .footer-logo-img {
+        width: 200px;
+    }
+
     .footer {
         display: block;
     }

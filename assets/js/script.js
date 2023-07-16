@@ -1,6 +1,8 @@
 var viewportHeight = window.innerHeight;
 var viewportWidth = window.innerHeight;
 var visionSection = $(".vision-section");
+var delay = 0;
+var delayValue = 0;
 
 AOS.init();
 
@@ -22,12 +24,12 @@ function setValuesBanner() {
     $("#values-banner").attr("src", "./vlsi_assets/values/final-vertical.png");
   } 
   else {
+    delayValue = 200;
     $("#values-banner").attr("src", "./vlsi_assets/values/final.png");
   }
 }
 
 var activityList = $(".activity-list");
-var delay = 0;
 
 fetch('assets/json/activities.json')
   .then(response => response.json())
@@ -55,7 +57,7 @@ fetch('assets/json/activities.json')
           </div>
         </a>
       `)
-      delay += 200;
+      delay += delayValue;
     });
 
     var activityCards = $(".new-activity-card");
