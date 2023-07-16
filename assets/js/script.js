@@ -2,7 +2,6 @@ var viewportHeight = window.innerHeight;
 var viewportWidth = window.innerHeight;
 var visionSection = $(".vision-section");
 var delay = 0;
-var delayValue = 0;
 
 AOS.init();
 
@@ -57,7 +56,7 @@ fetch('assets/json/activities.json')
           </div>
         </a>
       `)
-      delay += delayValue;
+      delay += 50;
     });
 
     var activityCards = $(".new-activity-card");
