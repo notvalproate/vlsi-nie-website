@@ -48,6 +48,11 @@ nav {
     background-color: black !important;
     padding: 0;
 }
+
+.navbar-height {
+    height: 90px;
+}
+
 .navbar-brand{
     font-weight: 600;
     font-size: 1.5rem;
