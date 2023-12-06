@@ -156,6 +156,10 @@ nav .dropdown-menu a:hover, nav.dropdown-menu a:focus{
     text-align: center;
 }
 
+.display-none {
+    display: none;
+}
+
 .line-hr {
     width: 60px;
     border-style: solid;
@@ -273,6 +277,12 @@ ul.dashed>li:before {
     object-fit: cover;
     height: 260px;
     transition: 200ms;
+}
+
+.activity-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
 }
 
 .activity-info {
