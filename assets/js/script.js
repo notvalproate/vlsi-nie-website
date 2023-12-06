@@ -50,6 +50,7 @@ fetch('assets/json/activities.json')
             <span class="activity-date">${element.date_time_short}</span>
           </div>
           <img src="${element.poster_url}" alt="placeholder.png" class="activity-poster">
+          <span class="activity-title">${element.title}</span>
           <p class="activity-info">${element.subtitle}</p>
           <div class="register-wrapper">
             <div class="register-button">REGISTER</div>
@@ -71,8 +72,14 @@ fetch('assets/json/activities.json')
             $("#venue").html(`${activities[index].venue}`);
             $("#fee").html(`${activities[index].fee}`);
             $("#description").html(`${activities[index].description}`);
-            $("#qr-code").attr("src", `${activities[index].qr_code_url}`);
-            $("#form_link").attr("href", `${activities[index].form_link}`);
+
+            if(activities[index].has_registeration) {
+              $("#qr-code").attr("src", `${activities[index].qr_code_url}`);
+              $("#form_link").attr("href", `${activities[index].form_link}`);
+            } else {
+              $("#qr-code").addClass('display-none');
+              $("#register_link").html("This event is free for anyone to join! No registeration is required.");
+            }
 
             activityInfoContainer.css("visibility", "visible");
             activityInfoCard.addClass("info-card-in");

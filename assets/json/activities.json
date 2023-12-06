@@ -1,16 +1,17 @@
 {
     "activities": [
         {
-            "title": "Integrated S",
-            "subtitle": "Design of Integrated Circuits: From a Human Intelligence Perspective",
+            "title": "Design of Integrated Circuits",
+            "subtitle": "Join us on this exciting talk on the design of ICs from a Human Intelligence Perspective",
             "poster_url": "./assets/images/activity_images/postervlsi.png",
             "date_time": "2:30PM, Dec 8",
             "date_time_short": "8/12/23",
             "venue": "Radhakrishna Hall, Admin Block",
             "fee": "Free for All",
             "description": "Design of Integrated Circuits: From a Human Intelligence Perspective",
-            "qr_code_url": "./assets/images/qr-code.png",
-            "form_link": "https://www.amd.com"
+            "has_registeration": false,
+            "qr_code_url": "",
+            "form_link": ""
         }
     ]
 }
